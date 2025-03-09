@@ -99,7 +99,6 @@ jobs:
         sed -i -e 's/CONFIG_LTO_CLANG_FULL=y/# CONFIG_LTO_CLANG_FULL is not set/' arch/arm64/configs/vendor/timelm_defconfig
         make clean
         make mrproper
-        make dtbs DTC_FLAGS="-Wno-everything"
         export ARCH=arm64
         export SUBARCH=ARM64
         export KBUILD_BUILD_USER="chideiku"
